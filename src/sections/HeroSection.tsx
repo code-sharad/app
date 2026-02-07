@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 interface HeroSectionProps {
   variant?: 'default' | 'closing';

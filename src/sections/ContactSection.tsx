@@ -1,52 +1,14 @@
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import {
   MapPin,
   Phone,
   MessageCircle,
   Mail,
   FileText,
-  Send,
-  CheckCircle
 } from 'lucide-react';
 
 const ContactSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
-
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    company: '',
-    phone: '',
-    email: '',
-    requirement: '',
-  });
-
-
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Simulate form submission
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: '',
-        company: '',
-        phone: '',
-        email: '',
-        requirement: '',
-      });
-    }, 3000);
-  };
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
 
   const contactInfo = [
     {
