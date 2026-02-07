@@ -1,0 +1,81 @@
+/* App-specific styles */
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: auto;
+}
+
+/* Hide scrollbar for cleaner look but keep functionality */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F6F7F3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6B7D78;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0E2A26;
+}
+
+/* Selection color */
+::selection {
+  background: #CFFF91;
+  color: #0B1E1C;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid #CFFF91;
+  outline-offset: 2px;
+}
+
+/* Image hover effect for cards */
+/* Image hover effect removed */
+
+/* Button hover lift effect */
+/* Button hover lift effect removed */
+
+/* Card hover effect */
+/* Card hover effect removed */
+
+/* Text gradient */
+.text-gradient {
+  background: linear-gradient(135deg, #0E2A26 0%, #6B7D78 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Polaroid shadow */
+.polaroid-shadow {
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06),
+    0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+  .section-pinned {
+    min-height: 100vh;
+    height: auto;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
